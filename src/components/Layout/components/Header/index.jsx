@@ -7,6 +7,7 @@ import classNames from 'classnames/bind';
 import styles from './header.module.scss';
 import imgs from '~/assets/imgs';
 import { WapperPopper } from '~/components/Popper';
+import Button from '~/components/Button';
 const cx = classNames.bind(styles);
 console.log(imgs.logo);
 function Header() {
@@ -28,10 +29,10 @@ function Header() {
                             <WapperPopper>
                                 <h4 className={cx('label-result')}>Kết quả tiềm kiếm</h4>
                                 <div className={cx('list-result')}>
-                                    <AccountItemResult padding />
-                                    <AccountItemResult padding />
-                                    <AccountItemResult padding />
-                                    <AccountItemResult padding />
+                                    <AccountItemResult padding check={false} />
+                                    <AccountItemResult padding check={true} />
+                                    <AccountItemResult padding check={false} />
+                                    <AccountItemResult padding check={false} />
                                 </div>
                             </WapperPopper>
                         </div>
@@ -49,7 +50,10 @@ function Header() {
                         </button>
                     </div>
                 </TippyHeadless>
-                <div className={cx('header-action')}>action</div>
+                <div className={cx('header-action')}>
+                    <Button outline>Đăng ký</Button>
+                    <Button primary>Đăng nhập</Button>
+                </div>
             </div>
         </div>
     );

@@ -7,6 +7,8 @@
     --default-layout-header-width: 1150px;
     --dark-text: rgba(22, 24, 35, 1);
     --gray-icon: #a7a7ab;
+    --primary-color: rgba(254, 44, 85, 1);
+    --white-color: #fff;
 }
 html {
     font-size: 62.5%;
@@ -19,6 +21,10 @@ html {
 button {
     background-color: transparent;
     border: none;
+}
+a {
+    text-decoration: none;
+    color: var(--dark-text);
 }
 body {
     font-family: 'IBM Plex Sans', sans-serif;
