@@ -105,13 +105,18 @@
     }
 }
 // re
-.header-resault {
+.header-result {
+    width: 360px;
 }
-.label-resault {
+.label-result {
+    padding-left: 16px;
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
     color: rgba(22, 24, 35, 0.5);
 }
-.list-resault {
+.list-result {
+}
+.item-result {
+    padding-left: 15px;
 }

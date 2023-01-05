@@ -3,9 +3,9 @@ import { AiFillCheckCircle } from 'react-icons/ai';
 import classNames from 'classnames/bind';
 import styles from './accountResult.module.scss';
 const cx = classNames.bind(styles);
-function AccountItem() {
+function AccountItem({ padding }) {
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper', { padding: padding })}>
             <div className={cx('avatar')}>
                 <img src="https://i.pravatar.cc/150?img=8" alt="" />
             </div>

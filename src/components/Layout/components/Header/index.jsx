@@ -21,13 +21,17 @@ function Header() {
                     <img src={imgs.logo} alt="TikTok" />
                 </div>
                 <TippyHeadless
+                    interactive
                     visible={seachResult.length > 0}
                     render={(attrs) => (
-                        <div className={cx('header-resault')} tabIndex="-1" {...attrs}>
+                        <div className={cx('header-result')} tabIndex="-1" {...attrs}>
                             <WapperPopper>
-                                <h4 className={cx('label-resault')}>Kết quả tiềm kiếm</h4>
-                                <div className={cx('list-resault')}>
-                                    <AccountItemResult />
+                                <h4 className={cx('label-result')}>Kết quả tiềm kiếm</h4>
+                                <div className={cx('list-result')}>
+                                    <AccountItemResult padding />
+                                    <AccountItemResult padding />
+                                    <AccountItemResult padding />
+                                    <AccountItemResult padding />
                                 </div>
                             </WapperPopper>
                         </div>

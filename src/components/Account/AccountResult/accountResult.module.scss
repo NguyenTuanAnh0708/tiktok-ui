@@ -1,6 +1,13 @@
 .wrapper {
     padding: 16px 0px;
     display: flex;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+.padding {
+    padding-left: 16px;
 }
 .avatar {
     width: 45px;
